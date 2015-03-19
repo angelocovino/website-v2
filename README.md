@@ -1,9 +1,12 @@
 # website-v2
-Angelo Covino WebSite v2.0
+## Angelo Covino WebSite v2.0
 
-<h2>Author</h2>
-Angelo Covino
+### Author: Angelo Covino
 
-<h2>Updates</h2>
-<h4>18 March 2015</h4>
-Initial Commit
+#### To run locally you will need:
+- LAMP (or Apache and PHP)
+
+### To compile the website after changes:
+- `lessc stylesheet.less > stylesheet.css` to build CSS
+
+Have fun!
