@@ -22,6 +22,7 @@
 	<link rel='stylesheet' type='text/css' href='stylesheet.css'>
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script type="text/javascript">
+		/* SCROLL TO ANCHORS */
 		$(document).ready(function(){
 			$('a[href^="#"]').click(function(e){
 				e.preventDefault();
@@ -38,17 +39,18 @@
 	</script>
 </head>
 <body>
-	<header id="top_gap">&nbsp;</header>
+	<section id="top_gap">&nbsp;</section>
+
 	<section id="upper_menu">
-		<header id="banner">
+		<header>
 			<!--
-			<h1 id="logo"><img src="logo1.png" /></h1>
+			<h1><img src="logo1.png" /></h1>
 			-->
 			<nav>
 				<a href="#about">about me</a><a href="#portfolio">portfolio</a><a href="#contacts">contact</a>
 			</nav>
 		</header>
-		<section id="headerone">
+		<section id="banner">
 			<div class="big">Clarity, Simplicity, Beauty</div>
 			<div class="less_big">New technologies, but warm old-fashioned eyes</div>
 		</section>
@@ -123,7 +125,7 @@
 				</li><li>
 					<input type="email" name="email" placeholder="Email (required)" required="required" />
 				</li><li>
-					<textarea name="text" placeholder="Your text (required)" required="required" /></textarea>
+					<textarea name="text" placeholder="Your text (required)" required="required"></textarea>
 				</li><li>
 					<input type="submit" value="Submit" />
 				</li>
@@ -132,15 +134,26 @@
 	</section>
 
 	<section id="social">
-		<!--
-		<span class="title">social</span><br />
-		-->
-		<a href="//github.com/angelocovino" target="_blank"><img src="github-64.png" /></a><a href="//it.linkedin.com/in/angelocovino" target="_blank"><img src="linkedin-64.png" /></a><a href="//twitter.com/angelocovino90" target="_blank"><img src="twitter-64.png" /></a>
+		<?php
+			$images = array(
+				"github-64.png",
+				"linkedin-64.png",
+				"twitter-64.png"
+			);
+			$links = array(
+				"//github.com/angelocovino",
+				"//it.linkedin.com/in/angelocovino",
+				"//twitter.com/angelocovino90"
+			);
+			for($i=0; $i<count($images); $i++):
+				echo "<a href='{$links[$i]}' target='_blank'><img src='{$images[$i]}' /></a>";
+			endfor;
+		?>
 	</section>
 	
 	<footer id="bottom_footer">
-		&copy; 2014 - 2015 Angelo Covino
-		<div style="padding:0.25em 0em; font-size:0.8em;">WebSite Version 2.0</div>
+		<div id="copyright">&copy; 2014 - 2015 Angelo Covino</div>
+		<div id="website_version">WebSite Version 2.0</div>
 	</footer>
 </body>
 </html>
