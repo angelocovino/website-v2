@@ -16,10 +16,14 @@
 	<!-- TITLE -->
 	<title>Angelo Covino</title>
 	<!-- LINKS -->
-	<link rel="shortcut icon" type="image/x-icon" href="icono.ico" />
-	<link rel="stylesheet" type="text/css" href="html5reset.css" />
-	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:300,400'>
-	<link rel='stylesheet' type='text/css' href='stylesheet.css'>
+	<?php
+		$images_path="images/";
+		$stylesheet_path="stylesheet/";
+	?>
+	<link rel="shortcut icon" type="image/x-icon" href="<?php echo $images_path; ?>icono.ico" />
+	<link rel="stylesheet" type="text/css" href="<?php echo $stylesheet_path; ?>html5reset.css" />
+	<link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:300,400'>
+	<link rel='stylesheet' type='text/css' href='<?php echo $stylesheet_path; ?>stylesheet.css'>
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script type="text/javascript">
 		/* SCROLL TO ANCHORS */
@@ -61,20 +65,20 @@
 		<div class="title">most recent works</div>
 		<ul>
 			<li>
-				<a href="//salvatorecatapanoarchitects.co.uk/" target="_blank"><img src="sca.jpg" /></a>
+				<a href="//salvatorecatapanoarchitects.co.uk/" target="_blank"><img src="<?php echo $images_path; ?>sca.jpg" /></a>
 			</li><li>
 			<!--
-				<a href="//angelotm.altervista.org/liferesidential/index.html"><img src="angelotm.jpg" /></a>
+				<a href="//angelotm.altervista.org/liferesidential/index.html"><img src="<?php echo $images_path; ?>angelotm.jpg" /></a>
 			</li><li>
 			-->
-				<a href="//angelotm.altervista.org/portfolio_data/liferesidential/index.html" target="_blank"><img src="liferesidential.jpg" /></a>
+				<a href="//angelotm.altervista.org/portfolio_data/liferesidential/index.html" target="_blank"><img src="<?php echo $images_path; ?>liferesidential.jpg" /></a>
 			</li>
 		</ul>
 	</section>
 	
 	<section id="about">
 		<div class="about_img">
-			<img src="angelo.jpg" />
+			<img src="<?php echo $images_path; ?>angelo.jpg" />
 		</div><div class="about_me">
 			<div class="title">about me</div>
 			Hello! I am a self-taught Web Developer &amp; User Interface Designer based in London.<br />
@@ -146,7 +150,7 @@
 				"//twitter.com/angelocovino90"
 			);
 			for($i=0; $i<count($images); $i++):
-				echo "<a href='{$links[$i]}' target='_blank'><img src='{$images[$i]}' /></a>";
+				echo "<a href='{$links[$i]}' target='_blank'><img src='{$images_path}{$images[$i]}' /></a>";
 			endfor;
 		?>
 	</section>

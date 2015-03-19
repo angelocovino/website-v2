@@ -3,10 +3,10 @@
 
 ### Author: Angelo Covino
 
-#### To run locally you will need:
+#### To run it locally you will need:
 - LAMP (or Apache and PHP)
 
-### To compile the website after changes:
+### To could need also:
 - `lessc stylesheet.less > stylesheet.css` to build CSS
 
 Have fun!
