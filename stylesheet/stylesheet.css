@@ -22,10 +22,6 @@ a:link,
 a:active,
 a:visited {
   color: inherit;
-  transition: color 1s ease;
-}
-a:hover {
-  color: white;
 }
 body {
   font-family: 'DK Hokitika';
@@ -43,17 +39,46 @@ body {
 }
 .button {
   display: inline-block;
-  box-shadow: 0px 5px 0px white;
-  border: 1px solid white;
-  -webkit-border-radius: 0.25em;
-  -moz-border-radius: 0.25em;
-  -o-border-radius: 0.25em;
-  border-radius: 0.25em;
+  border-width: 1px;
+  border-style: solid;
+  border-bottom-width: 5px;
   font-size: 0.6em;
   padding: 0.5em 1em;
   margin-bottom: 2.5em;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+.button_white {
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+  border-bottom-width: 5px;
+  font-size: 0.6em;
+  padding: 0.5em 1em;
+  margin-bottom: 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-color: white;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
+}
+.button_colored {
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+  border-bottom-width: 5px;
+  font-size: 0.6em;
+  padding: 0.5em 1em;
+  margin-bottom: 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-color: #364054;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
 }
 ul {
   list-style: none;
@@ -94,6 +119,15 @@ ul {
   height: 1.5em;
 }
 /* UPPER MENU */
+#upper_menu a,
+#upper_menu a:link,
+#upper_menu a:active,
+#upper_menu a:visited {
+  transition: color 1s ease;
+}
+#upper_menu a:hover {
+  color: white;
+}
 #upper_menu h1 {
   position: absolute;
   left: 50%;

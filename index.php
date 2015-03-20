@@ -58,7 +58,7 @@
 			<div class="big">Clarity, Simplicity, Beauty</div>
 			<div class="less_big">New technologies, but warm old-fashioned eyes</div>
 		</section>
-		<a class="button" href="#contacts">work with me</a>
+		<a class="button_white" href="#contacts">work with me</a>
 	</section>
 	
 	<section id="portfolio">
@@ -74,6 +74,8 @@
 				<a href="//angelotm.altervista.org/portfolio_data/liferesidential/index.html" target="_blank"><img src="<?php echo $images_path; ?>liferesidential.jpg" /></a>
 			</li>
 		</ul>
+		<br />
+		<a href="//www.behance.net/angelocovino" class="button_colored" target="_blank">view behance portfolio</a>
 	</section>
 	
 	<section id="about">
@@ -139,18 +141,21 @@
 
 	<section id="social">
 		<?php
+			$social_extension = "-64.png";
 			$images = array(
-				"github-64.png",
-				"linkedin-64.png",
-				"twitter-64.png"
+				"github",
+				"behance",
+				"linkedin",
+				"twitter"
 			);
 			$links = array(
 				"//github.com/angelocovino",
+				"//www.behance.net/angelocovino",
 				"//it.linkedin.com/in/angelocovino",
 				"//twitter.com/angelocovino90"
 			);
 			for($i=0; $i<count($images); $i++):
-				echo "<a href='{$links[$i]}' target='_blank'><img src='{$images_path}{$images[$i]}' /></a>";
+				echo "<a href='{$links[$i]}' target='_blank'><img src='{$images_path}{$images[$i]}{$social_extension}' /></a>";
 			endfor;
 		?>
 	</section>
