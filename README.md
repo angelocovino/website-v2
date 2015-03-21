@@ -1,4 +1,3 @@
-# website-v2
 ## Angelo Covino WebSite v2.0
 
 ####  Browser tested:
@@ -8,6 +7,8 @@
 	- Firefox
 - Linux:
 	- Firefox
+	- Chromium
+	- Opera
 
 #### To run it locally you will need:
 - LAMP (or Apache and PHP)

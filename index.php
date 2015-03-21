@@ -74,7 +74,6 @@
 				<a href="//angelotm.altervista.org/portfolio_data/liferesidential/index.html" target="_blank"><img src="<?php echo $images_path; ?>liferesidential.jpg" /></a>
 			</li>
 		</ul>
-		<br />
 		<a href="//www.behance.net/angelocovino" class="button_colored" target="_blank">view behance portfolio</a>
 	</section>
 	

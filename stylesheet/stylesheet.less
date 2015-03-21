@@ -63,24 +63,23 @@ body {
 }
 .button {
 	display:inline-block;
-	border-width:1px;
-	border-style:solid;
-	border-bottom-width:5px;
 	font-size:0.6em;
 	padding:0.5em 1em;
 	margin-bottom:2.5em;
 	text-transform:uppercase;
 	letter-spacing:0.05em;
+	border-width:1px;
+	border-style:solid;
+	border-bottom-width:5px;
+	.border-radius(0.25em);
 }
 .button_white {
 	.button;
 	border-color:white;
-	.border-radius(0.25em);
 }
 .button_colored {
 	.button;
 	border-color:@basecolor;
-	.border-radius(0.25em);
 }
 ul {
 	list-style:none;
@@ -112,7 +111,7 @@ ul {
 }
 #contacts,
 #portfolio {
-	background-color:rgba(245, 245, 245, 1);
+	background-color:white;
 }
 
 /* TOP GAP */
@@ -166,8 +165,11 @@ ul {
 
 /* PORTFOLIO */
 #portfolio {
+	a[class^="button"] {
+		margin:3em 0em 0em 0em;
+	}
 	.title {
-		font-size:1em !important;
+		font-size:1em;
 	}
 	ul {
 		li {
@@ -263,7 +265,7 @@ ul {
 input, textarea {
 	.secondaryfont;
 	line-height:1.3em;
-	background:white;
+	background-color:rgba(245, 245, 245, 1);
 	.border-radius(0.25em);
 	font-size:0.8em;
 	box-sizing:border-box;
@@ -271,6 +273,9 @@ input, textarea {
 	width:calc(100% - 2px);
 	border:1px solid @basecolor;
 	transition:box-shadow 0.5s ease;
+	&:focus {
+		box-shadow:0 0 2px 0 @basecolor;
+	}
 }
 textarea {
 	min-height:6em;
@@ -280,12 +285,10 @@ input:not([type='submit']), textarea{
 	.basefont;
 }
 input[type='submit'] {
+	background-color:white;
 	font-weight:400;
 	border-bottom-width:5px;
 	width:50%;
-}
-input:focus, textarea:focus {
-	box-shadow:0 0 2px 0 @basecolor;
 }
 
 /* PLACEHOLDER FONT TRICK */
