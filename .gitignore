@@ -1,6 +1,6 @@
+!.gitignore
 fonts
 images
-!.gitignore
 *.jpg
 *.png
 *.bmp
