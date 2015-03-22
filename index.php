@@ -21,8 +21,8 @@
 		$stylesheet_path="stylesheet/";
 	?>
 	<link rel="shortcut icon" type="image/x-icon" href="<?php echo $images_path; ?>icono.ico" />
-	<link rel="stylesheet" type="text/css" href="<?php echo $stylesheet_path; ?>html5reset.css" />
 	<link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:300,400'>
+	<link rel="stylesheet" type="text/css" href="<?php echo $stylesheet_path; ?>reset.css" />
 	<link rel='stylesheet' type='text/css' href='<?php echo $stylesheet_path; ?>stylesheet.css'>
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script type="text/javascript">
@@ -74,6 +74,8 @@
 				<a href="//angelotm.altervista.org/portfolio_data/liferesidential/index.html" target="_blank"><img src="<?php echo $images_path; ?>liferesidential.jpg" /></a>
 			</li>
 		</ul>
+		<br />
+		<br />
 		<a href="//www.behance.net/angelocovino" class="button_colored" target="_blank">view behance portfolio</a>
 	</section>
 	

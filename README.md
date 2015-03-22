@@ -2,9 +2,9 @@
 
 ####  Browser tested:
 - Windows:
-	- Chrome
-	- Chromium
 	- Firefox
+	- Chromium
+	- Chrome
 - Linux:
 	- Firefox
 	- Chromium
