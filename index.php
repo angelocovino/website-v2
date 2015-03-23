@@ -22,7 +22,6 @@
 	?>
 	<link rel="shortcut icon" type="image/x-icon" href="<?php echo $images_path; ?>icono.ico" />
 	<link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:300,400'>
-	<link rel="stylesheet" type="text/css" href="<?php echo $stylesheet_path; ?>reset.css" />
 	<link rel='stylesheet' type='text/css' href='<?php echo $stylesheet_path; ?>stylesheet.css'>
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script type="text/javascript">
@@ -51,14 +50,33 @@
 			<h1><img src="logo1.png" /></h1>
 			-->
 			<nav>
-				<a href="#about">about me</a><a href="#portfolio">portfolio</a><a href="#contacts">contact</a>
+				<?php
+					$entries = array(
+						"works",
+						"about me",
+						//"writing",
+						"contact"
+					);
+					$entries_links = array(
+						"#portfolio",
+						"#about",
+						//"writing.php",
+						"#contacts"
+					);
+					for($i=0; $i<count($entries); $i++):
+						echo "<a href=\"${entries_links[$i]}\">${entries[$i]}</a>";
+					endfor;
+				?>
 			</nav>
 		</header>
 		<section id="banner">
 			<div class="big">Clarity, Simplicity, Beauty</div>
-			<div class="less_big">New technologies, but warm old-fashioned eyes</div>
+			<div class="less_big">New technologies, warm old-fashioned eyes</div>
 		</section>
 		<a class="button_white" href="#contacts">work with me</a>
+		<!--
+		<div class="small simple_link">or <a href="#">read about my workflow</a></div>
+		-->
 	</section>
 	
 	<section id="portfolio">

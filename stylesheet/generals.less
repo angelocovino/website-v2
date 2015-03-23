@@ -1,0 +1,73 @@
+/* GENERALS */
+a, a:link, a:active, a:visited { color:inherit; }
+body {
+	.basefont;
+	line-height:1em;
+	color:white;
+	text-align:center;
+	text-shadow:0px 1px 0px rgba(0, 0, 0, 0.25);
+}
+.title {
+	font-size:1.5em;
+	padding-bottom:0.5em;
+	.basefont;
+}
+.button {
+	.secondaryfont;
+	display:inline-block;
+	font-size:0.4em;
+	font-weight:bold;
+	padding:0.5em 1em;
+	text-transform:uppercase;
+	letter-spacing:0.05em;
+	border-width:1px;
+	border-style:solid;
+	border-bottom-width:5px;
+	.border-radius(0.25em);
+}
+.button_white {
+	.button;
+	border-color:white;
+}
+.button_colored {
+	.button;
+	border-color:@basecolor;
+}
+ul {
+	list-style:none;
+	margin:0 auto;
+	margin-top:1em;
+	max-width:1080px;
+}
+#about,
+#social,
+#upper_menu {
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-color:transparent;
+	.background-size(cover);
+}
+
+#about,
+#contacts,
+#portfolio {
+	padding:3em 1em;
+}
+#contacts,
+#social {
+	font-size:0.7em;
+}
+#portfolio,
+#contacts {
+	color:@basecolor;
+}
+#contacts,
+#portfolio {
+	background-color:white;
+}
+
+/* PLACEHOLDER FONT TRICK */
+::-webkit-input-placeholder { .secondaryfont; }
+:-moz-placeholder { .secondaryfont; }
+::-moz-placeholder { .secondaryfont; }
+:-ms-input-placeholder { .secondaryfont; }

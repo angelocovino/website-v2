@@ -1,0 +1,31 @@
+/* MEDIA */
+@media all and (min-width:800px){
+	body { font-size:35px; }
+	#upper_menu { background-image:url('@{baseimage-url}background.jpg'); }
+	#about,
+	#social { background-image:url('@{baseimage-url}background_about1.jpg'); }
+	#about,
+	#social,
+	#upper_menu { background-attachment:fixed; }
+	.about_me,
+	.about_img { max-width:500px; }
+	.about_me { width:(100% - 0.2% - @about_img-width); }
+}
+@media all and (max-width:799px){
+	#upper_menu { background-image:url('@{baseimage-url}background_small.jpg'); }
+	#about,
+	#social { background-image:url('@{baseimage-url}background_about_small.jpg'); }
+	.about_me {
+		width:100%;
+		padding-left:1em;
+	}
+	.about_img { display:none !important; }
+}
+@media all and (min-width:500px) and (max-width:799px){
+	body { font-size:30px; }
+	#social img { width:48px; }
+}
+@media all and (max-width:499px){
+	body { font-size:25px; }
+	#social img { width:48px; }
+}
