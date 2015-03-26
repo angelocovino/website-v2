@@ -417,8 +417,7 @@ body {
   font-family: 'Open Sans';
   font-weight: 300;
   display: inline-block;
-  font-size: 0.4em;
-  font-weight: bold;
+  font-size: 0.45em;
   padding: 0.5em 1em;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -434,8 +433,7 @@ body {
   font-family: 'Open Sans';
   font-weight: 300;
   display: inline-block;
-  font-size: 0.4em;
-  font-weight: bold;
+  font-size: 0.45em;
   padding: 0.5em 1em;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -452,8 +450,7 @@ body {
   font-family: 'Open Sans';
   font-weight: 300;
   display: inline-block;
-  font-size: 0.4em;
-  font-weight: bold;
+  font-size: 0.45em;
   padding: 0.5em 1em;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -782,10 +779,24 @@ textarea {
   resize: vertical;
 }
 input[type='submit'] {
-  background-color: white;
-  font-weight: 400;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  display: inline-block;
+  font-size: 0.45em;
+  padding: 0.5em 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-width: 1px;
+  border-style: solid;
   border-bottom-width: 5px;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
+  border-color: #364054;
   width: 50%;
+  font-size: 0.6em;
+  padding: 1em;
 }
 /* SOCIAL */
 #social {
