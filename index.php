@@ -106,13 +106,14 @@
 			<br />
 			Born in Naples (Italy), I have begun to study Computer Science in Naples, and I would like to complete it in London. In December 2014 I am arrived in London to start an awesome experience.<br />
 			<br />
-			I have a genuine passion in what I do, in fact I have started when i was just a child with HTML4. I can still remember how proud I was when I saw my first 'Hello World!'. That has been the moment I realized it was my real passion.<br />
+			I have a genuine passion in what I do, in fact I have started when I was just a child with HTML4. I can still remember how proud I was when I saw my first 'Hello World!'. That has been the moment I realized it was my real passion.<br />
 			<br />
 			I often spend my free time learning new languages and developing something on my personal computer.<br />
 			<br />
-			I am currently studying english at Westminster Kingsway College in Victoria to improve my English proficiency and I am also working as Freelance Web Developer.<br />
+			I am currently studying english at Westminster Kingsway College in Victoria, and I am also working as free-lance Web Developer.<br />
 			<br />
-			If you have a project tell me about it,<br />contact me!
+			If you have a project tell me about it,<br />
+			contact me!
 		</div>
 	</section>
 	
